@@ -1,7 +1,4 @@
-# from re import A
-# from turtle import update
 import gspread
-from pprint import pprint
 from google.oauth2.service_account import Credentials
 
 SCOPE = [
@@ -30,7 +27,7 @@ def get_sales_data():
         print("Data should be six numbers, seperatad by commas.")
         print("Example: 10,20,30,40,50,60\n")
 
-        data_str = input("Enter your data here: ")
+        data_str = input("Enter your data here:\n")
 
         sales_data = data_str.split(",")
 
